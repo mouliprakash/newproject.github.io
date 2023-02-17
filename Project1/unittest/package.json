@@ -4,16 +4,21 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha 'test-cases'"
+    "test": "mocha 'test-cases'",
+    "test-spy": "mocha 'test-cases/spy-spec.js'"
   },
   "author": "Mouli",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.3.2",
+    "chai-as-promised": "^7.1.1",
     "express": "^4.18.2",
+    "nock": "^13.3.0",
     "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "chai": "^4.3.7",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.1"
   }
 }
